@@ -1,0 +1,79 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "firstName": "Archana ",
+      "lastName": "D A",
+      "email": "archana@gmail.com",
+      "dob": "2000-08-13T18:30:00.000Z",
+      "gender": "2",
+      "education": "Graduation",
+      "company": "google",
+      "experience": 3,
+      "package": 12,
+      "id": 1
+    },
+    {
+      "firstName": "Nikhil",
+      "lastName": "Kuna",
+      "email": "Nikhil@gmail.com",
+      "dob": "1998-07-05T18:30:00.000Z",
+      "gender": "2",
+      "education": "Post Graduation",
+      "company": "Dutech bank",
+      "experience": 4,
+      "package": 15,
+      "id": 2
+    },
+    {
+      "firstName": "Arun",
+      "lastName": "Kumar",
+      "email": "arun@gmail.com",
+      "dob": "1994-08-02T18:30:00.000Z",
+      "gender": "1",
+      "education": "Intermediate",
+      "company": "hp",
+      "experience": 2,
+      "package": 4,
+      "id": 3
+    },
+    {
+      "firstName": "ertfgyh",
+      "lastName": "fgvhb",
+      "email": "",
+      "dob": "",
+      "gender": "",
+      "education": "",
+      "company": "",
+      "experience": "",
+      "package": "",
+      "id": 4
+    },
+    {
+      "firstName": "dfghj",
+      "lastName": "dfgh",
+      "email": "fghjk",
+      "dob": "2000-06-02T18:30:00.000Z",
+      "gender": "2",
+      "education": "",
+      "company": "",
+      "experience": "",
+      "package": "",
+      "id": 5
+    }
+  ]
+}
