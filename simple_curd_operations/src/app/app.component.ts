@@ -1,11 +1,13 @@
 import { DialogRef } from '@angular/cdk/dialog';
-import { EmpAddEditComponent } from './emp-add-edit/emp-add-edit.component';
+import { EmpAddEditComponent } from './employee/emp-add-edit/emp-add-edit.component';
 import { Component, OnInit , ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { EmployeeService } from './services/employee.service';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
+import { CoreservicesService } from './core/coreservices.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +23,7 @@ export class AppComponent implements OnInit{
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  constructor(private _dialog:MatDialog, private empserv:EmployeeService){}
+  constructor(private _dialog:MatDialog, private empserv:EmployeeService , private core:CoreservicesService , private router:Router){}
   ngOnInit(): void {
     this.getEmployeedata();
   }
@@ -33,6 +35,11 @@ export class AppComponent implements OnInit{
       this.dataSource.paginator.firstPage();
     }
   }
+
+  employeeTable(){
+    this.router.navigate(['Employee']);
+  }
+
   openAddEditempForm(){
     const DialogRef=this._dialog.open(EmpAddEditComponent);
     DialogRef.afterClosed().subscribe({
@@ -56,12 +63,8 @@ export class AppComponent implements OnInit{
       }
     })
   }
-  openEditempForm(id:number){
-this.empserv.getemployeeById(id).subscribe({
-  next:(res)=>{
-    const DialogRef=this._dialog.open(EmpAddEditComponent,{
-      data:res
-    });
+  openEditempForm(data:any){
+    const DialogRef=this._dialog.open(EmpAddEditComponent,{data});
     DialogRef.afterClosed().subscribe({
       next:(val)=>{
         if(val){
@@ -69,16 +72,11 @@ this.empserv.getemployeeById(id).subscribe({
         }
       }
     })
-  },
-  error:(err)=>{
-    console.log(err);
-  } 
-})
   }
   deleteEmployee(id:number){
     this.empserv.deleteemployee(id).subscribe({
       next:(res)=>{
-        alert("Employee deleted successfully");
+        this.core.openSnackBar("Employee deleted successfully" , 'Cancel');
         this.getEmployeedata();
       },
       error:(err)=>{

@@ -1,19 +1,6 @@
 {
-  "posts": [
-    {
-      "id": "1",
-      "title": "a title",
-      "views": 100
-    },
-    {
-      "id": "2",
-      "title": "another title",
-      "views": 200
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
+
+  "student":[],
   "employees": [
     {
       "firstName": "Archana ",
@@ -52,28 +39,28 @@
       "id": 3
     },
     {
-      "firstName": "ertfgyh",
-      "lastName": "fgvhb",
-      "email": "",
-      "dob": "",
-      "gender": "",
-      "education": "",
-      "company": "",
-      "experience": "",
-      "package": "",
+      "firstName": "Vikas",
+      "lastName": "Reddy",
+      "email": "vikas@gmail.com",
+      "dob": "1991-08-15T18:30:00.000Z",
+      "gender": "1",
+      "education": "Post Graduation",
+      "company": "SJCIT",
+      "experience": 7,
+      "package": 7,
       "id": 4
     },
     {
-      "firstName": "dfghj",
-      "lastName": "dfgh",
-      "email": "fghjk",
-      "dob": "2000-06-02T18:30:00.000Z",
-      "gender": "2",
-      "education": "",
-      "company": "",
-      "experience": "",
-      "package": "",
-      "id": 5
+      "firstName": "Varshith",
+      "lastName": "venkata",
+      "email": "varshith@gmail.com",
+      "dob": "2002-01-29T18:30:00.000Z",
+      "gender": "1",
+      "education": "Post Graduation",
+      "company": "Microsoft",
+      "experience": 2,
+      "package": 24,
+      "id": 6
     }
   ]
 }
