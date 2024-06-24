@@ -19,7 +19,7 @@ export class EmplistComponent {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  constructor(private _dialog:MatDialog, private empserv:EmployeeService , private router: Router){}
+  constructor(private _dialog:MatDialog, private empserv:EmployeeService , private router: Router , ){}
   ngOnInit(): void {
     this.getEmployeedata();
   }
@@ -57,8 +57,8 @@ export class EmplistComponent {
   Home(){
     this.router.navigate(['']);
   }
-  openEditempForm(id:number){
-this.empserv.getemployeeById(id).subscribe({
+  openEditempForm( data:any){
+this.empserv.updateemployeeById(data.id ,data).subscribe({
   next:(res)=>{
     const DialogRef=this._dialog.open(EmpAddEditComponent,{
       data:res

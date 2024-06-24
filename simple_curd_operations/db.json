@@ -1,6 +1,5 @@
 {
-
-  "student":[],
+  "student": [],
   "employees": [
     {
       "firstName": "Archana ",
@@ -39,16 +38,15 @@
       "id": 3
     },
     {
-
       "firstName": "dfghj",
       "lastName": "dfgh",
       "email": "fghjk",
       "dob": "2000-06-02T18:30:00.000Z",
       "gender": "2",
-      "education": "",
-      "company": "",
-      "experience": "",
-      "package": "",
+      "education": "Intermediate",
+      "company": "capgemini",
+      "experience": 3,
+      "package": 24,
       "id": 5
     },
     {
@@ -62,7 +60,8 @@
       "experience": 2,
       "package": 9,
       "id": 7
-    },{
+    },
+    {
       "firstName": "Vikas",
       "lastName": "Reddy",
       "email": "vikas@gmail.com",
@@ -84,8 +83,31 @@
       "company": "Microsoft",
       "experience": 2,
       "package": 24,
-
       "id": 6
+    },
+    {
+      "firstName": "dfghj",
+      "lastName": "dfgh",
+      "email": "fghjk",
+      "dob": "2000-06-02T18:30:00.000Z",
+      "gender": "2",
+      "education": "Diploma",
+      "company": "",
+      "experience": 2,
+      "package": 6,
+      "id": 8
+    },
+    {
+      "firstName": "dfghj",
+      "lastName": "dfgh",
+      "email": "fghjk",
+      "dob": "2000-06-02T18:30:00.000Z",
+      "gender": "2",
+      "education": "Intermediate",
+      "company": "",
+      "experience": "",
+      "package": 3,
+      "id": 9
     }
   ]
 }
