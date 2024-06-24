@@ -20,8 +20,8 @@ deleteemployee(id:number):Observable<any>{
   return(this.http.delete<any>("http://localhost:3000/employees/"+id));
 }
 
-getemployeeById(id:number):Observable<any>{
-  return(this.http.get<any>("http://localhost:3000/employees/"+id));
+updateemployeeById(id:number , data:any):Observable<any>{
+  return(this.http.put("http://localhost:3000/employees/"+id ,data));
 }
 
 }

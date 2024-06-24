@@ -55,8 +55,7 @@ import { MatCardModule } from '@angular/material/card';
    HttpClientModule,
    MatTableModule,
    MatPaginatorModule,
-   MatSortModule ,
-   MatCardModule
+   MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
