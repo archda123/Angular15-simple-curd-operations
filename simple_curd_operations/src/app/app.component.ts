@@ -1,4 +1,13 @@
-import { Component } from '@angular/core';
+import { DialogRef } from '@angular/cdk/dialog';
+import { EmpAddEditComponent } from './employee/emp-add-edit/emp-add-edit.component';
+import { Component, OnInit , ViewChild } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { EmployeeService } from './services/employee.service';
+import {MatPaginator} from '@angular/material/paginator';
+import {MatSort} from '@angular/material/sort';
+import {MatTableDataSource} from '@angular/material/table';
+import { CoreservicesService } from './core/coreservices.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +15,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'simple_curd_operations';
+  title = 'Simple_curd_operations';
+ 
 }

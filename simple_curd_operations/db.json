@@ -1,0 +1,91 @@
+{
+
+  "student":[],
+  "employees": [
+    {
+      "firstName": "Archana ",
+      "lastName": "D A",
+      "email": "archana@gmail.com",
+      "dob": "2000-08-13T18:30:00.000Z",
+      "gender": "2",
+      "education": "Graduation",
+      "company": "google",
+      "experience": 3,
+      "package": 12,
+      "id": 1
+    },
+    {
+      "firstName": "Nikhil",
+      "lastName": "Kuna",
+      "email": "Nikhil@gmail.com",
+      "dob": "1998-07-05T18:30:00.000Z",
+      "gender": "2",
+      "education": "Post Graduation",
+      "company": "Dutech bank",
+      "experience": 4,
+      "package": 15,
+      "id": 2
+    },
+    {
+      "firstName": "Arun",
+      "lastName": "Kumar",
+      "email": "arun@gmail.com",
+      "dob": "1994-08-02T18:30:00.000Z",
+      "gender": "1",
+      "education": "Intermediate",
+      "company": "hp",
+      "experience": 2,
+      "package": 4,
+      "id": 3
+    },
+    {
+
+      "firstName": "dfghj",
+      "lastName": "dfgh",
+      "email": "fghjk",
+      "dob": "2000-06-02T18:30:00.000Z",
+      "gender": "2",
+      "education": "",
+      "company": "",
+      "experience": "",
+      "package": "",
+      "id": 5
+    },
+    {
+      "firstName": "asdfg",
+      "lastName": "xcvbn",
+      "email": "sdfg@gmail.com",
+      "dob": "1993-08-10T18:30:00.000Z",
+      "gender": "1",
+      "education": "Diploma",
+      "company": "capgemini",
+      "experience": 2,
+      "package": 9,
+      "id": 7
+    },{
+      "firstName": "Vikas",
+      "lastName": "Reddy",
+      "email": "vikas@gmail.com",
+      "dob": "1991-08-15T18:30:00.000Z",
+      "gender": "1",
+      "education": "Post Graduation",
+      "company": "SJCIT",
+      "experience": 7,
+      "package": 7,
+      "id": 4
+    },
+    {
+      "firstName": "Varshith",
+      "lastName": "venkata",
+      "email": "varshith@gmail.com",
+      "dob": "2002-01-29T18:30:00.000Z",
+      "gender": "1",
+      "education": "Post Graduation",
+      "company": "Microsoft",
+      "experience": 2,
+      "package": 24,
+
+      "id": 6
+    }
+  ]
+}
