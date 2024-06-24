@@ -15,7 +15,7 @@ import {ToastrModule} from 'ngx-toastr';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { EmpAddEditComponent } from './emp-add-edit/emp-add-edit.component';
+import { EmpAddEditComponent } from './employee/emp-add-edit/emp-add-edit.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
@@ -23,11 +23,16 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
 import {MatSort, MatSortModule} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
+import { HomeComponent } from './home/home.component';
+import { EmplistComponent } from './employee/emplist/emplist.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmpAddEditComponent
+    EmpAddEditComponent,
+    HomeComponent,
+    EmplistComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +55,8 @@ import {MatTableDataSource} from '@angular/material/table';
    HttpClientModule,
    MatTableModule,
    MatPaginatorModule,
-   MatSortModule
+   MatSortModule ,
+   MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
